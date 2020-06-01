@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href="Style.css">
+</head>
+<body>
+
+    <div class="container">
+        <section>
+            <h1 class = "title" >Rules of Chess</h1>
+            <h2 class = "subheading">Strategies and Tactics</h2>
+            <img  src="Images/TitleImg.png" alt="ChessPiece" class= "TitleImg">
+        </section>
+    </div>
+
+    <div class = "Intro">
+        <div class="container">
+            <h3 class= "IntroTitle">
+                Undestanding the basics       
+            </h3>                        
+            <p class = "IntroParagraph">
+                Chess is a game that is played on a 8 square by 8 square board. Each square alternates 
+                between white and black every square. At the start of the game both players are given 16
+                pieces each: eight Pawns, two Knights, two Bishops, two Rooks, one King and Queen.                                
+            </p>                         
+            <img src="Images/ChessBoard.png" alt="ChessBoard">
+        </div>
+    </div>
+
+    <div class = "Gray-Container">
+        <div class= "container">
+            <h3 class= "Win-Conditions">Win Conditions</h3>
+            <ul class= "Win-Conditions-List">
+                <li>
+                    <img src="Images/ChessCondition/WinChessCondition.png" alt="WinConditionImg">
+                    <h3 class= "Win-Conditions-SubHeading">Win</h3>
+                    <p>In chess, you win when the opposing player resigns, or you check the opposing king and it has no way of blocking it which is called a "Checkmate". You check a player when your piece is in the line of sight to attack the opposing king.</p>
+                </li>
+                <li>
+                    <img src="Images/ChessCondition/DrawChessCondition.png" alt="DrawConditionImg">
+                    <h3 class= "Win-Conditions-SubHeading">Draw</h3>
+                    <p>In chess, you can draw by 5 ways. Number one, Draw by agreement: if both players agree to a draw. Number two, Stalemate: if a player is not able to move any piece without being checked. Number three, Threefold repitetion: if both players repeat a move 3 times. Number four, Unsufficent material: if it isn't possible to checkmate with the current pieces. Numer five, fifty move rule: if no pawn is moven or any pieces is caputered in fifty moves.
+                    </p>
+                </li>
+                <li>
+                   <img src="Images/ChessCondition/LoseChessCondition.png" alt="LoseConditionImg">
+                   <h3 class= "Win-Conditions-SubHeading">Lose</h3>
+                   <p>In chess, you lose when you resign, or when your king is checkmated</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <h2 class= "Piece-Header"> The Pieces</h2>
+
+    <section class= "Pieces-Section">
+        <div class="Pieces-Div">
+            <h3 class= "Piece-SubHeader">Pawn</h3>
+            <p>Generally the pawn moves forward only, one square at a time. An exception is the first time a pawn is moved, it may move forward two squares. The pawn cannot jump over other pieces; any piece directly in front of a pawn blocks its advance to that square. The pawn is the only piece that cannot move backward.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/Pawn.png" alt="Chess-Piece">
+        </div>
+
+        <div class="Pieces-Div">
+            <h3 class="Piece-SubHeader">Bishop</h3>
+            <p>The bishop chess piece moves in any direction diagonally. Chess rules state that there is no limit to the number of squares a bishop can travel on the chessboard, as long as there is not another piece obstructing its path. Bishops capture opposing pieces by landing on the square occupied by an enemy piece.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/Bishop.png" alt="Chess-Piece">
+        </div>
+
+        <div class="Pieces-Div">
+            <h3 class="Piece-SubHeader">Knight</h3>
+            <p>The knight is the only piece on the board that may jump over other pieces. The knight moves two squares horizontally or vertically and then one more square at a right-angle. The knight's move is shaped as an “L”. The knight always lands on a square opposite in color from its initial square.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/Knight.png" alt="Chess-Piece">
+        </div>
+
+        <div class="Pieces-Div">
+            <h3 class="Piece-SubHeader">Rook</h3>
+            <p>The rook moves horizontally or vertically, through any number of unoccupied squares. As with captures by other pieces, the rook captures by occupying the square on which the enemy piece sits. The rook also participates, with the king, in a special move called castling.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/Rook.png" alt="Chess-Piece">
+        </div>
+
+        <div class="Pieces-Div">
+            <h3 class="Piece-SubHeader">Queen</h3>
+            <p>The queen can be moved any number of unoccupied squares in a straight line vertically, horizontally, or diagonally, thus combining the moves of the rook and bishop. The queen captures by occupying the square on which an enemy piece sits.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/Queen.png" alt="Chess-Piece">
+        </div>
+
+        <div class="Pieces-Div">
+            <h3 class="Piece-SubHeader">King</h3>
+            <p>TThe King can move one space in any direction (see the diagram). He can never move in to "check" (where he is threatened by another piece). This means the king can never be in the space adjacent to the opposing King. The king can also castle.</p>
+            <img class= "Chess-Piece" src="Images/Chess-Pieces/King.png" alt="Chess-Piece">
+        </div>
+    </section>
+    
+    <footer class= "Tactics-Footer">
+        <h2 class= "Tactics-Header">Tactics</h2>
+        <div class="Tactics">
+            <a class="Tactics-A" href= "../TacticPages/Pin/Pin.html"><h3>Pin</h3></a>  
+            <a class="Tactics-A" href="../TacticPages/Skewer/Skewer.html"><h3>Skewer</h3></a>     
+            <a class="Tactics-A" href="../TacticPages/Fork/Fork.html"><h3>Fork</h3></a>
+            <a class="Tactics-A" href="../TacticPages/Removing-the-Defender/Removing-The-Defender.html"><h3>Removing the Defender</h3></a>
+            <a class="Tactics-A" href="../TacticPages/Discovered-Attack/Discover-Attack.html"><h3>Discovered Attack</h3></a>
+        </div>
+    </footer>
+</body>
+</html>

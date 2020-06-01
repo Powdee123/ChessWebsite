@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{  
+    margin: 0;
+    padding: 0; 
+    font-family: 'Montserrat';
+    color: #111;
+}
+
+
+
+.Pin-Title{
+    text-align: center;
+    font-size: 3em;
+}
+
+.Pin-Intro h2{   
+    margin-left: 0.5em; 
+    font-size: 1.7em;
+}
+.Pin-Intro p{
+    margin-left: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+.Pin-Example1{   
+    display: flex;  
+    margin-left: 10%;
+    width: 300px;  
+    height: 400px;
+    opacity: .75;
+    background-image: url(Pin-IMG/ChessBoard.jpg);
+    background-size:cover;
+    border: 15px solid #231709;   
+    border-radius: 25px
+}
+
+.Pin-Example1 img{  
+
+    width: 100px;   
+    height: 100px;     
+}
+
+.Knight{
+    transform: translate(0,100%);
+  
+}
+
+.Bishop{
+    transform: translate(0,200%);
+   
+}
+
+
+.Pin-Example1:hover{
+    opacity: 1;
+}
+.Pin-Example1:hover .Knight{
+    animation: KnightMovement 6s infinite;
+}
+
+.Pin-Example1:hover .Bishop{
+    animation: BishopMovement 6s infinite;
+}
+
+.Pin-Example1:hover .Queen{    
+    animation: QueenMovement 6s infinite;
+}
+
+
+@keyframes KnightMovement{
+    0%{
+        transform: translate(0,100%);
+    }
+    16.6%{
+        transform: translate(0,200%);
+    }
+    33.3%{
+        transform: translate(0,300%);
+    }
+    50%{
+        transform: translate(-100%,300%);
+    }
+    66.6%{
+        transform: translate(-100%,300%);
+    }
+    83.3%{
+        transform: translate(-100%,300%);
+    }
+    100%{
+        transform: translate(-100%,300%);
+    }
+}
+
+
+@keyframes BishopMovement{
+    0%{
+        transform: translate(0,200%);
+    }
+    16.6%{
+        transform: translate(0,200%);
+    }
+    33.3%{
+        transform: translate(0,200%);
+    }
+    50%{
+        transform: translate(0,200%);
+    }
+    66.6%{
+        transform: translate(-100%,100%);
+    }
+    83.3%{
+        transform: translate(-200%,0%);
+    }   
+    100%{
+        transform: translate(-200%,0%);
+    }
+}
+
+@keyframes QueenMovement{
+    70%{
+        opacity: 1;
+    }
+
+    78.1%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 750px){    
+
+    .container{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
